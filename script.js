@@ -1,7 +1,7 @@
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
-
+document.getElementById("eauMinirale").style.display = "none";
 $(".next").click(function () {
   var wilaya = document.getElementById("wilaya").value;
   var age = document.getElementById("age").value;
@@ -291,7 +291,15 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  var elements = document.querySelectorAll("#mySlides");
+  var slides = [];
+
+  for (var j = 0; i < elements.length; i++) {
+    if (elements[i].style.display !== "none") {
+      slides.push(elements[i]);
+    }
+  }
+  //let slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {
     slideIndex = slides.length;
   }
@@ -307,7 +315,7 @@ function showSlides(n) {
 
 $(document).ready(function () {
   $("#EauM").click(function () {
-    document.getElementById("contentifri").style.display = "block";
+    //document.getElementById("Guedila").style.display = "block";
     $("#Guedila").append(
       '<img src="/image ikhtiyari/eau minéral/Guedila.jpg" style="width:50%">'
     );
