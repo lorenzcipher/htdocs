@@ -593,4 +593,64 @@ $(document).ready(function () {
       '<img src="/image ikhtiyari/boisson gazeuse aux saveur de fruits/Sprit.png" style="width:50%">'
     );
   });
+
+  $("#CoucheB").click(function () {
+    $("#Bimbies").append(
+      '<img src="/image ikhtiyari/couche bébé/Bimbies.jpg" style="width:50%">'
+    );
+    $("#Canbebe").append(
+      '<img src="/image ikhtiyari/couche bébé/Canbebe.png" style="width:50%">'
+    );
+    $("#Mio bébé").append(
+      '<img src="/image ikhtiyari/couche bébé/Mio bébé.jpg" style="width:50%">'
+    );
+    $("#Molfix").append(
+      '<img src="/image ikhtiyari/couche bébé/Molfix.png" style="width:50%">'
+    );
+  });
+
+  $("#EssuieT").click(function () {
+    $("#Cotex").append(
+      '<img src="/image ikhtiyari/essuit tout/Cotex.jpg" style="width:50%">'
+    );
+    $("#King").append(
+      '<img src="/image ikhtiyari/essuit tout/King.jpg" style="width:50%">'
+    );
+    $("#Sofia").append(
+      '<img src="/image ikhtiyari/essuit tout/Sofia.jpg" style="width:50%">'
+    );
+    $("#Wafa").append(
+      '<img src="/image ikhtiyari/essuit tout/Wafa.jpg" style="width:50%">'
+    );
+  });
+
+  $("#ServietteH").click(function () {
+    $("#awane").append(
+      '<img src="/image ikhtiyari/seviette hygiénique/awane.png" style="width:50%">'
+    );
+    $("#Ayam").append(
+      '<img src="/image ikhtiyari/seviette hygiénique/Ayam.jpg" style="width:50%">'
+    );
+    $("#Elle et Elle").append(
+      '<img src="/image ikhtiyari/seviette hygiénique/Elle et Elle.png" style="width:50%">'
+    );
+    $("#Molped").append(
+      '<img src="/image ikhtiyari/seviette hygiénique/Molped.jpg" style="width:50%">'
+    );
+  });
+
+  $("#Tele").click(function () {
+    $("#Brandt").append(
+      '<img src="/image ikhtiyari/télévision/Brandt.png" style="width:50%">'
+    );
+    $("#Condor").append(
+      '<img src="/image ikhtiyari/télévision/Condor.png" style="width:50%">'
+    );
+    $("#Iris").append(
+      '<img src="/image ikhtiyari/télévision/Iris.jpg" style="width:50%">'
+    );
+    $("#Stream system").append(
+      '<img src="/image ikhtiyari/télévision/Stream system.jpg" style="width:50%">'
+    );
+  });
 });
