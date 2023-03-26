@@ -348,41 +348,181 @@
       <fieldset>
         <h2 class="fs-title">produits</h2>
         <h3 class="fs-subtitle">المنتوج</h3>
+          
 
         <!-- Slideshow container -->
         <div class="slideshow-container" id="slideshow-container">
 
-          <!-- Full-width images with number and caption text -->
-          
-          <div class="mySlides fade" id="Guedila"></div>
-          <div class="mySlides fade" id="Ifri"></div>
-          <div class="mySlides fade" id="Lala khedidja"></div>
-          <div class="mySlides fade" id="Messerghine"></div>
-          <div class="mySlides fade" id="Saida"></div>
-          <div class="mySlides fade" id="Youkous"></div>
-    
-          <div class="mySlides fade" id="besbassa"></div>
+          <script>
+            const checkbox1 = document.getElementById("EauM");
+            const checkbox2 = document.getElementById("EauS");
+            const checkbox3 = document.getElementById("EauJ");
+            const outerDiv = document.getElementById("slideshow-container");
+            let isChecked1 = false;
+            let isChecked2 = false;
+            let isChecked3 = false;
 
-          <div class="mySlides fade" id="bouglez"></div>
 
-          <div class="mySlides fade" id="Ovital"></div>
 
-          <div class="mySlides fade" id="Sidi rached"></div>
+            checkbox1.addEventListener("click", () => {
+              if (!isChecked1) {
+                isChecked1 = true;
+                const innerDiv11 = document.createElement("div");
+                innerDiv11.id = "Ifri";
+                innerDiv11.className = "mySlides fade";
+                innerDiv11.style ="display: none;"
+                const img11 = document.createElement("img");
+                img11.src = "/image ikhtiyari/eau minéral/Ifri.jpg";
+                innerDiv11.appendChild(img11);
+                outerDiv.appendChild(innerDiv11);
 
-          <div class="mySlides fade" id="Amor ben amor" ></div>
+                const innerDiv12 = document.createElement("div");
+                innerDiv12.id = "Guedila";
+                innerDiv12.className = "mySlides fade";
+                innerDiv12.style ="display: none;"
+                const img12 = document.createElement("img");
+                img12.src = "/image ikhtiyari/eau minéral/Guedila.jpg";
+                innerDiv12.appendChild(img12);
+                outerDiv.appendChild(innerDiv12);
 
-          <div class="mySlides fade" id="El hara" ></div>
+                const innerDiv13 = document.createElement("div");
+                innerDiv13.id = "Messerghine";
+                innerDiv13.className = "mySlides fade";
+                innerDiv13.style ="display: none;"
+                const img13 = document.createElement("img");
+                img13.src = "/image ikhtiyari/eau minéral/Messerghine.jpg";
+                innerDiv13.appendChild(img13);
+                outerDiv.appendChild(innerDiv13);
 
-          <div class="mySlides fade" id="Extra" ></div>
+                const innerDiv14 = document.createElement("div");
+                innerDiv14.id = "Lala khedidja";
+                innerDiv14.className = "mySlides fade";
+                innerDiv14.style ="display: none;"
+                const img14 = document.createElement("img");
+                img14.src = "/image ikhtiyari/eau minéral/Lala khedidja.jpg";
+                innerDiv4.appendChild(img14);
+                outerDiv.appendChild(innerDiv14);
 
-          <div class="mySlides fade" id="Mama" ></div>
+                const innerDiv15 = document.createElement("div");
+                innerDiv15.id = "Saida";
+                innerDiv15.className = "mySlides fade";
+                innerDiv15.style ="display: none;"
+                const img15 = document.createElement("img");
+                img15.src = "/image ikhtiyari/eau minéral/Saida.png";
+                innerDiv5.appendChild(img15);
+                outerDiv.appendChild(innerDiv15);
 
-          <div class="mySlides fade" id="Safina" ></div>
+                const innerDiv16 = document.createElement("div");
+                innerDiv16.id = "Youkous";
+                innerDiv16.className = "mySlides fade";
+                innerDiv16.style ="display: none;"
+                const img16 = document.createElement("img");
+                img16.src = "/image ikhtiyari/eau minéral/Youkous.jpg";
+                innerDiv6.appendChild(img16);
+                outerDiv.appendChild(innerDiv16);
+              }
+            });
+            checkbox2.addEventListener("click", () => {
+              if (!isChecked2) {
+                isChecked2 = true;
+                const innerDiv21 = document.createElement("div");
+                innerDiv21.id = "Besbassa";
+                innerDiv21.className = "mySlides fade";
+                innerDiv21.style ="display: none;"
+                const img21 = document.createElement("img");
+                img21.src = "/image ikhtiyari/eau de source/Besbassa.png";
+                innerDiv21.appendChild(img21);
+                outerDiv.appendChild(innerDiv21);
 
-          <div class="mySlides fade" id="Sim" ></div>
+                const innerDiv22 = document.createElement("div");
+                innerDiv22.id = "Bouglez";
+                innerDiv22.className = "mySlides fade";
+                innerDiv22.style ="display: none;"
+                const img22 = document.createElement("img");
+                img22.src = "/image ikhtiyari/eau de source/Bouglez.jpg";
+                innerDiv22.appendChild(img22);
+                outerDiv.appendChild(innerDiv22);
 
-          <div class="mySlides fade" id="belle"></div>
+                const innerDiv23 = document.createElement("div");
+                innerDiv23.id = "Ovital";
+                innerDiv23.className = "mySlides fade";
+                innerDiv23.style ="display: none;"
+                const img23 = document.createElement("img");
+                img23.src = "/image ikhtiyari/eau de source/Ovital.jpg";
+                innerDiv23.appendChild(img23);
+                outerDiv.appendChild(innerDiv23);
 
+                const innerDiv24 = document.createElement("div");
+                innerDiv24.id = "Sidi rached";
+                innerDiv24.className = "mySlides fade";
+                innerDiv24.style ="display: none;"
+                const img24 = document.createElement("img");
+                img24.src = "/image ikhtiyari/eau de source/Sidi rached.jpg";
+                innerDiv24.appendChild(img24);
+                outerDiv.appendChild(innerDiv24);
+              }
+            });
+
+            checkbox3.addEventListener("click", () => {
+              if (!isChecked3) {
+                isChecked3 = true;
+                const innerDiv31 = document.createElement("div");
+                innerDiv31.id = "Aigle";
+                innerDiv31.className = "mySlides fade";
+                innerDiv31.style ="display: none;"
+                const img31 = document.createElement("img");
+                img31.src = "/image ikhtiyari/eau de javel/Aigle.png";
+                innerDiv31.appendChild(img31);
+                outerDiv.appendChild(innerDiv31);
+
+                const innerDiv32 = document.createElement("div");
+                innerDiv32.id = "Amir";
+                innerDiv32.className = "mySlides fade";
+                innerDiv32.style ="display: none;"
+                const img32 = document.createElement("img");
+                img32.src = "/image ikhtiyari/eau de javel/Amir.jpg";
+                innerDiv32.appendChild(img32);
+                outerDiv.appendChild(innerDiv32);
+
+                const innerDiv33 = document.createElement("div");
+                innerDiv33.id = "Bref";
+                innerDiv33.className = "mySlides fade";
+                innerDiv33.style ="display: none;"
+                const img33 = document.createElement("img");
+                img33.src = "/image ikhtiyari/eau de javel/Bref.png";
+                innerDiv33.appendChild(img33);
+                outerDiv.appendChild(innerDiv33);
+
+                const innerDiv34 = document.createElement("div");
+                innerDiv34.id = "Javel d'oz";
+                innerDiv34.className = "mySlides fade";
+                innerDiv34.style ="display: none;"
+                const img34 = document.createElement("img");
+                img34.src = "/image ikhtiyari/eau de javel/Javel d'oz.jpg";
+                innerDiv34.appendChild(img34);
+                outerDiv.appendChild(innerDiv34);
+
+                const innerDiv35 = document.createElement("div");
+                innerDiv35.id = "Life";
+                innerDiv35.className = "mySlides fade";
+                innerDiv35.style ="display: none;"
+                const img35 = document.createElement("img");
+                img35.src = "/image ikhtiyari/eau de javel/Life.jpg";
+                innerDiv35.appendChild(img35);
+                outerDiv.appendChild(innerDiv35);
+
+                const innerDiv36 = document.createElement("div");
+                innerDiv36.id = "Test";
+                innerDiv36.className = "mySlides fade";
+                innerDiv36.style ="display: none;"
+                const img36 = document.createElement("img");
+                img36.src = "/image ikhtiyari/eau de javel/Test.jpg";
+                innerDiv36.appendChild(img36);
+                outerDiv.appendChild(innerDiv36);
+              }
+            });
+          </script>
+       
           
 
         </div>
@@ -396,7 +536,7 @@
 
 
           
-        </div>
+
         <!-- Next and previous buttons -->
           <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
         <a class="suivant" onclick="plusSlides(1)">&#10095;</a>
@@ -439,8 +579,8 @@
 
 
 
-        <div class="content">
-          <div id="sidirached" class="data">
+        <div class="content" id="miniform">
+          <div  class="data">
             <span><br /><br /><br /><br /><br /><br /><br /><br />
               Avez-vous deja consomer la marque <br />
               هل سبق لك أن استهلكت العلامة التجارية
